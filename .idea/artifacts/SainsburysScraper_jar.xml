@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SainsburysScraper:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SainsburysScraper_jar</output-path>
+    <root id="archive" name="SainsburysScraper.jar">
+      <element id="module-output" name="SainsburysScraper" />
+    </root>
+  </artifact>
+</component>
