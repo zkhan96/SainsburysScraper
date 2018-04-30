@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SainsburysScraper.iml" filepath="$PROJECT_DIR$/SainsburysScraper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SainsburysScraper.iml" filepath="$PROJECT_DIR$/.idea/modules/SainsburysScraper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SainsburysScraper_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SainsburysScraper_main.iml" group="SainsburysScraper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SainsburysScraper_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SainsburysScraper_test.iml" group="SainsburysScraper" />
     </modules>
   </component>
 </project>
