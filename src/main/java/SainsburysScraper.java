@@ -16,6 +16,6 @@ public class SainsburysScraper {
     }
 
     HtmlPage htmlPage = page.get();
-    htmlPage.getDocumentElement().getHtmlElementDescendants().forEach(System.out::println);
+    htmlPage.getHtmlElementById("productLister").getDomElementDescendants().forEach(System.out::println);
   }
 }
