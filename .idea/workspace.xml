@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="003f4217-d91f-49f2-865d-8d7d0328b13f" name="Default" comment="possibly found the best function to build objects from">
+    <list default="true" id="003f4217-d91f-49f2-865d-8d7d0328b13f" name="Default" comment="using XPath to get required element">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_1_10_19.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Product.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ProductHtmlParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/SainsburysScrapeService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/SainsburysScrapeServiceImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/SimpleHtmlPageGetter.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/SimpleHtmlPageGetterTest.java" afterPath="$PROJECT_DIR$/src/test/java/SainsburysScrapeServiceImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SainsburysScraper.java" afterPath="$PROJECT_DIR$/src/main/java/SainsburysScraper.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,7 +50,13 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SainsburysScraper" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SainsburysScraper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -55,32 +72,58 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SainsburysScraper.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SainsburysScraper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SainsburysScraper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+            <state relative-caret-position="396">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SgmlPage.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.19/d9b07734a252d0155b0784cb4a441c1803155f92/htmlunit-2.19-sources.jar!/com/gargoylesoftware/htmlunit/SgmlPage.java">
+      <file leaf-file-name="SainsburysScrapeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SainsburysScrapeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="293" column="35" lean-forward="false" selection-start-line="293" selection-start-column="35" selection-end-line="293" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="108">
+              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HtmlElement.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.19/d9b07734a252d0155b0784cb4a441c1803155f92/htmlunit-2.19-sources.jar!/com/gargoylesoftware/htmlunit/html/HtmlElement.java">
+      <file leaf-file-name="SainsburysScrapeServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SainsburysScrapeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="283" column="49" lean-forward="false" selection-start-line="283" selection-start-column="49" selection-end-line="283" selection-end-column="49" />
+            <state relative-caret-position="323">
+              <caret line="31" column="69" lean-forward="true" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductHtmlParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ProductHtmlParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SainsburysScrapeServiceImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SainsburysScrapeServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="100" column="81" lean-forward="false" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -91,8 +134,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -315,8 +359,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3050154976000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2118027874" />
+        <entry key="$PROJECT_DIR$" value="3050278508000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1791729924" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1389967582" />
       </map>
     </option>
@@ -505,12 +549,18 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/test/java/SainsburysScraperTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SainsburysScraperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ProductBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/SimpleHtmlPageGetter.java" />
         <option value="$PROJECT_DIR$/src/test/java/SimpleHtmlPageGetterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SainsburysScrapeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Product.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/ProductHtmlParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SainsburysScrapeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/SainsburysScraper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SainsburysScrapeServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -523,7 +573,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="1853" />
+    <option name="width" value="927" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -542,9 +592,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -601,9 +651,13 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/khanHD/SainsburysScraper/src/main/java/SimpleHtmlPageGetter.java" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -627,81 +681,106 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.run">
-    <configuration name="All in SainsburysScraper_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList">
+    <configuration name="SainsburysScrapeServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <module name="SainsburysScraper_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="SainsburysScrapeServiceImplTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
+        <value defaultName="singleModule" />
       </option>
       <envs />
       <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Gradle.BeforeRunTask" enabled="true" tasks="compileTestJava" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
-      </method>
     </configuration>
-    <configuration name="SainsburysScraper [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="check" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
+    <configuration name="SainsburysScrapeServiceImplTest.givenInvalidXPath_whenBuildingProductsFromProductPage_thenReturnEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SainsburysScraper_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SainsburysScrapeServiceImplTest" />
+      <option name="METHOD_NAME" value="givenInvalidXPath_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
-    <configuration name="SainsburysScraper [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
+    <configuration name="SainsburysScrapeServiceImplTest.givenNullHtmlPage_whenBuildingProductsFromProductPage_thenReturnEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SainsburysScraper_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SainsburysScrapeServiceImplTest" />
+      <option name="METHOD_NAME" value="givenNullHtmlPage_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
-    <configuration name="SainsburysScraper [compileTestJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="compileTestJava" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
+    <configuration name="SainsburysScrapeServiceImplTest.givenNullXPath_whenBuildingProductsFromProductPage_thenReturnEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SainsburysScraper_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SainsburysScrapeServiceImplTest" />
+      <option name="METHOD_NAME" value="givenNullXPath_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SainsburysScraper_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SainsburysScrapeServiceImplTest" />
+      <option name="METHOD_NAME" value="givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
@@ -865,25 +944,27 @@
         <option name="Gradle.BeforeRunTask" enabled="true" tasks="" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="build" />
       </method>
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Gradle.run" />
       <item index="1" class="java.lang.String" itemvalue="Gradle.SainsburysScraper [test]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.SainsburysScraper [clean]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.SainsburysScraper [compileTestJava]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.SainsburysScraper [check]" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in SainsburysScraper_test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest.givenNullXPath_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest.givenInvalidXPath_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest.givenNullHtmlPage_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.SainsburysScraper [clean]" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in SainsburysScraper_test" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.SainsburysScraper [compileTestJava]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.SainsburysScraper [check]" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest.givenNullHtmlPage_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest.givenNullXPath_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SainsburysScrapeServiceImplTest.givenInvalidXPath_whenBuildingProductsFromProductPage_thenReturnEmptyList" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1525078019295" />
+    <option name="lastUpdateTimestamp" value="1525201024148" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -905,7 +986,8 @@
       <workItem from="1525038509623" duration="4829000" />
       <workItem from="1525077561760" duration="277000" />
       <workItem from="1525077860686" duration="976000" />
-      <workItem from="1525129247123" duration="4359000" />
+      <workItem from="1525129247123" duration="18657000" />
+      <workItem from="1525199969263" duration="4832000" />
     </task>
     <task id="LOCAL-00001" summary="integrated with gradle to simplify build process">
       <created>1525037204480</created>
@@ -935,62 +1017,71 @@
       <option name="project" value="LOCAL" />
       <updated>1525131922046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="using XPath to get required element">
+      <created>1525160537112</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525160537112</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_SainsburysScraper_test - 2018.04.30 at 09h 48m 12s.xml">
-      <configuration name="All in SainsburysScraper_test" configurationId="JUnit" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 30m 46s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 07h 17m 01s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 35m 24s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 09h 46m 46s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 36m 40s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 09h 46m 57s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 44m 33s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 09h 47m 01s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 44m 49s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 09h 47m 03s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 44m 58s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 09h 47m 53s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 45m 23s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 09h 49m 29s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 46m 05s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 09h 49m 33s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 58m 46s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainsburysScraper_[test] - 2018.04.30 at 09h 50m 02s.xml">
-      <configuration name="SainsburysScraper [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="SainsburysScrapeServiceImplTest_givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList - 2018.05.01 at 20h 59m 11s.xml">
+      <configuration name="SainsburysScrapeServiceImplTest.givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13687000" />
+    <option name="totallyTimeSpent" value="32817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.49570817" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43861893" sideWeight="0.50572246" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57126826" sideWeight="0.49427754" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33071747" sideWeight="0.49427754" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56026787" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55941707" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25956738" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19023849" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20077649" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39897698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39798206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1003,7 +1094,6 @@
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.49570817" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1026,15 +1116,51 @@
     <MESSAGE value="remove gitignore for simplicity" />
     <MESSAGE value="better logging and looking at item descendants of my desired class" />
     <MESSAGE value="possibly found the best function to build objects from" />
-    <option name="LAST_COMMIT_MESSAGE" value="possibly found the best function to build objects from" />
+    <MESSAGE value="using XPath to get required element" />
+    <option name="LAST_COMMIT_MESSAGE" value="using XPath to get required element" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SainsburysScrapeServiceImpl.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ProductHtmlParser.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="e#649#650#0" expanded="false" />
+            <element signature="e#683#684#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SainsburysScrapeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1127,20 +1253,6 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.19/d9b07734a252d0155b0784cb4a441c1803155f92/htmlunit-2.19-sources.jar!/com/gargoylesoftware/htmlunit/WebClient.java" />
     <entry file="file://$PROJECT_DIR$/test/java/SainsburysScraperTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/SainsburysScraperTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/SimpleHtmlPageGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SimpleHtmlPageGetterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1148,11 +1260,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.19/d9b07734a252d0155b0784cb4a441c1803155f92/htmlunit-2.19-sources.jar!/com/gargoylesoftware/htmlunit/SgmlPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="118">
+          <caret line="293" column="35" lean-forward="false" selection-start-line="293" selection-start-column="35" selection-end-line="293" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1164,19 +1275,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.19/d9b07734a252d0155b0784cb4a441c1803155f92/htmlunit-2.19-sources.jar!/com/gargoylesoftware/htmlunit/SgmlPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SimpleHtmlPageGetter.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.19/d9b07734a252d0155b0784cb4a441c1803155f92/htmlunit-2.19-sources.jar!/com/gargoylesoftware/htmlunit/html/xpath/XPathUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="293" column="35" lean-forward="false" selection-start-line="293" selection-start-column="35" selection-end-line="293" selection-end-column="35" />
+        <state relative-caret-position="193">
+          <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.19/d9b07734a252d0155b0784cb4a441c1803155f92/htmlunit-2.19-sources.jar!/com/gargoylesoftware/htmlunit/html/DomElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="677" column="30" lean-forward="false" selection-start-line="677" selection-start-column="30" selection-end-line="677" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="e#649#650#0" expanded="false" />
+            <element signature="e#683#684#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/logging/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1475" column="16" lean-forward="false" selection-start-line="1475" selection-start-column="16" selection-end-line="1475" selection-end-column="16" />
+          <folding>
+            <element signature="e#64585#64586#0" expanded="false" />
+            <element signature="e#64624#64625#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.19/d9b07734a252d0155b0784cb4a441c1803155f92/htmlunit-2.19-sources.jar!/com/gargoylesoftware/htmlunit/html/DomNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="1586" column="19" lean-forward="false" selection-start-line="1586" selection-start-column="19" selection-end-line="1586" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.1.0/6ee32e577850a9004e80a5685ff1afe5af781837/junit-jupiter-engine-5.1.0-sources.jar!/org/junit/jupiter/engine/descriptor/TestMethodTestDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.1.0/39d7c2eec7178ba6e53445a2851e66a966a7472f/junit-platform-commons-1.1.0-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="438" column="0" lean-forward="false" selection-start-line="438" selection-start-column="0" selection-end-line="438" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SainsburysScrapeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SainsburysScraper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+        <state relative-caret-position="396">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SainsburysScrapeServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="100" column="81" lean-forward="false" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ProductHtmlParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SainsburysScrapeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="69" lean-forward="true" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

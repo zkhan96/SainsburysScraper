@@ -10,14 +10,11 @@ dependencies {
     compile "com.fasterxml.jackson.core:jackson-databind:2.7.0"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    testCompile "org.mockito:mockito-core:1.+"
 }
 
 test {
     useJUnitPlatform()
-
-    testLogging {
-        events "passed", "skipped", "failed"
-    }
 
     reports {
         html.enabled = true
