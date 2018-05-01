@@ -1,11 +1,11 @@
 public class Product {
 
     private final String title;
-    private final String kCalPer100g;
-    private final String unitPrice;
+    private final int kCalPer100g;
+    private final double unitPrice;
     private final String description;
 
-    public Product(String title, String kCalPer100g, String unitPrice, String description) {
+    public Product(String title, int kCalPer100g, double unitPrice, String description) {
 
         this.title = title;
         this.kCalPer100g = kCalPer100g;
@@ -17,11 +17,11 @@ public class Product {
         return title;
     }
 
-    public String getkCalPer100g() {
+    public int getkCalPer100g() {
         return kCalPer100g;
     }
 
-    public String getUnitPrice() {
+    public double getUnitPrice() {
         return unitPrice;
     }
 

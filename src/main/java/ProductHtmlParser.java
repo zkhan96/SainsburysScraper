@@ -19,18 +19,40 @@ class ProductHtmlParser {
         }
 
         HtmlAnchor productAnchor = htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR);
+        HtmlPage productPage = getProductPage(productAnchor);
         return Optional.of(
             new Product(
-                getDataFromAnchorByXPath(productAnchor, XPATH_OF_PRODUCT_TITLE),
-                getDataFromAnchorByXPath(productAnchor, XPATH_FOR_NUTRITIONAL_VALUE),
-                getDataFromAnchorByXPath(productAnchor, XPATH_FOR_PRODUCT_PRICE),
-                getDataFromAnchorByXPath(productAnchor, XPATH_FOR_PRODUCT_DESCRIPTION)
+                getUnformattedDataFromAnchorByXPath(productPage, XPATH_OF_PRODUCT_TITLE),
+                (int) getAsDouble(getDataFromAnchorByXPath(productPage, XPATH_FOR_NUTRITIONAL_VALUE)),
+                getAsDouble(getDataFromAnchorByXPath(productPage, XPATH_FOR_PRODUCT_PRICE)),
+                getUnformattedDataFromAnchorByXPath(productPage, XPATH_FOR_PRODUCT_DESCRIPTION)
             )
         );
     }
 
+    private double getAsDouble(String value) {
+        return value == null || value.isEmpty() ? 0.0 : Double.parseDouble(value);
+    }
 
-    private String getDataFromAnchorByXPath(HtmlAnchor productAnchor, String xPath) {
+    private String getUnformattedDataFromAnchorByXPath(HtmlPage productPage, String xPath) {
+        if (productPage == null) {
+            return null;
+        }
+
+        HtmlElement htmlElement = productPage.getFirstByXPath(xPath);
+        return htmlElement != null ? htmlElement.getTextContent().trim() : null;
+    }
+
+    private String getDataFromAnchorByXPath(HtmlPage productPage, String xPath) {
+        if (productPage == null) {
+            return null;
+        }
+
+        HtmlElement htmlElement = productPage.getFirstByXPath(xPath);
+        return htmlElement != null ? getFormattedStringValue(htmlElement) : null;
+    }
+
+    private HtmlPage getProductPage(HtmlAnchor productAnchor) {
         if (productAnchor == null) {
             return null;
         }
@@ -46,8 +68,11 @@ class ProductHtmlParser {
         if (productPage == null) {
             return null;
         }
+        return productPage;
+    }
 
-        HtmlElement htmlElement = productPage.getFirstByXPath(xPath);
-        return htmlElement != null ? htmlElement.getTextContent().trim() : null;
+    private String getFormattedStringValue(HtmlElement htmlElement) {
+        return htmlElement.getTextContent().trim().replaceAll("<0\\.5g",
+            "0.5").replaceAll("kJ", "").replaceAll("£|/unit", "");
     }
 }
