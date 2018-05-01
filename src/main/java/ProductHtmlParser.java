@@ -14,13 +14,19 @@ class ProductHtmlParser {
 
 
     Optional<Product> buildProduct(HtmlDivision htmlProduct) {
-        return htmlProduct != null
-            ? Optional.of(new Product(
-            getDataFromAnchorByXPath(htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR), XPATH_OF_PRODUCT_TITLE),
-            getDataFromAnchorByXPath(htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR), XPATH_FOR_NUTRITIONAL_VALUE),
-            getDataFromAnchorByXPath(htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR), XPATH_FOR_PRODUCT_PRICE),
-            getDataFromAnchorByXPath(htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR), XPATH_FOR_PRODUCT_DESCRIPTION)))
-            : Optional.empty();
+        if (htmlProduct == null) {
+            return Optional.empty();
+        }
+
+        HtmlAnchor productAnchor = htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR);
+        return Optional.of(
+            new Product(
+                getDataFromAnchorByXPath(productAnchor, XPATH_OF_PRODUCT_TITLE),
+                getDataFromAnchorByXPath(productAnchor, XPATH_FOR_NUTRITIONAL_VALUE),
+                getDataFromAnchorByXPath(productAnchor, XPATH_FOR_PRODUCT_PRICE),
+                getDataFromAnchorByXPath(productAnchor, XPATH_FOR_PRODUCT_DESCRIPTION)
+            )
+        );
     }
 
 

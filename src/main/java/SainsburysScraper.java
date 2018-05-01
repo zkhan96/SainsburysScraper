@@ -22,5 +22,6 @@ public class SainsburysScraper {
     HtmlPage htmlPage = page.get();
     List<Product> productList = sainsburysScrapeService
         .buildProductsFromProductPage(htmlPage, XPATH_EXPR_FOR_PRODUCTS);
+
   }
 }
