@@ -22,10 +22,10 @@ class ProductHtmlParser {
         HtmlPage productPage = getProductPage(productAnchor);
         return Optional.of(
             new Product(
-                getUnformattedDataFromAnchorByXPath(productPage, XPATH_OF_PRODUCT_TITLE),
-                (int) getAsDouble(getDataFromAnchorByXPath(productPage, XPATH_FOR_NUTRITIONAL_VALUE)),
-                getAsDouble(getDataFromAnchorByXPath(productPage, XPATH_FOR_PRODUCT_PRICE)),
-                getUnformattedDataFromAnchorByXPath(productPage, XPATH_FOR_PRODUCT_DESCRIPTION)
+                getUnformattedDataFromPageByXPath(productPage, XPATH_OF_PRODUCT_TITLE),
+                (int) getAsDouble(getDataFromPageByXPath(productPage, XPATH_FOR_NUTRITIONAL_VALUE)),
+                getAsDouble(getDataFromPageByXPath(productPage, XPATH_FOR_PRODUCT_PRICE)),
+                getUnformattedDataFromPageByXPath(productPage, XPATH_FOR_PRODUCT_DESCRIPTION)
             )
         );
     }
@@ -34,7 +34,7 @@ class ProductHtmlParser {
         return value == null || value.isEmpty() ? 0.0 : Double.parseDouble(value);
     }
 
-    private String getUnformattedDataFromAnchorByXPath(HtmlPage productPage, String xPath) {
+    private String getUnformattedDataFromPageByXPath(HtmlPage productPage, String xPath) {
         if (productPage == null) {
             return null;
         }
@@ -43,7 +43,7 @@ class ProductHtmlParser {
         return htmlElement != null ? htmlElement.getTextContent().trim() : null;
     }
 
-    private String getDataFromAnchorByXPath(HtmlPage productPage, String xPath) {
+    private String getDataFromPageByXPath(HtmlPage productPage, String xPath) {
         if (productPage == null) {
             return null;
         }
