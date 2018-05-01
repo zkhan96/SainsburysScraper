@@ -1,49 +1,44 @@
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlDivision;
+import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.gargoylesoftware.htmlunit.html.HtmlTableDataCell;
 import java.util.Optional;
 
 class ProductHtmlParser {
 
     private  final String XPATH_OF_PRODUCT_ANCHOR = "div[contains(@class, 'productInfo')]/div[contains(@class, 'productNameAndPromotions')]/h3/a";
+    private  final String XPATH_OF_PRODUCT_TITLE = "//div[contains(@class, 'productTitleDescriptionContainer')]/h1";
     private  final String XPATH_FOR_NUTRITIONAL_VALUE = "//table[contains(@class, 'nutritionTable')]/tbody/tr[contains(@class, 'tableRow1')]/td[contains(@class, 'tableRow1')]";
 
 
     Optional<Product> buildProduct(HtmlDivision htmlProduct) {
         return htmlProduct != null
             ? Optional.of(new Product(
-                getProductName(htmlProduct),
-                getkCalPer100g(htmlProduct), 0.0, ""))
+            getDataFromAnchorByXPath(htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR), XPATH_OF_PRODUCT_TITLE),
+            getDataFromAnchorByXPath(htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR), XPATH_FOR_NUTRITIONAL_VALUE), 0.0,
+            ""))
             : Optional.empty();
     }
 
-    private String getkCalPer100g(HtmlDivision htmlProduct) {
+
+    private String getDataFromAnchorByXPath(HtmlAnchor productAnchor, String xPath) {
+        if (productAnchor == null) {
+            return null;
+        }
+
         HtmlPage productPage;
         try {
-            HtmlAnchor productAnchor = htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR);
-            if (productAnchor == null) {
-                return null;
-            }
             productPage = productAnchor.click();
         } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
-        HtmlTableDataCell energyTableCell = productPage.getFirstByXPath(XPATH_FOR_NUTRITIONAL_VALUE);
-        return energyTableCell != null ? energyTableCell.getTextContent() : null;
-    }
 
-    private String getProductName(HtmlDivision htmlProduct) {
-        HtmlAnchor htmlAnchor = htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR);
-        if (htmlAnchor == null) {
+        if (productPage == null) {
             return null;
         }
 
-        if (htmlAnchor.getTextContent() == null) {
-            return null;
-        }
-
-        return htmlAnchor.getTextContent().trim();
+        HtmlElement htmlElement = productPage.getFirstByXPath(xPath);
+        return htmlElement != null ? htmlElement.getTextContent().trim() : null;
     }
 }
