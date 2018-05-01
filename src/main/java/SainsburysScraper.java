@@ -16,6 +16,7 @@ public class SainsburysScraper {
     }
 
     HtmlPage htmlPage = page.get();
-    htmlPage.getHtmlElementById("productLister").getDomElementDescendants().forEach(System.out::println);
+    htmlPage.getByXPath("//ul[contains(@class, 'productLister gridView')]").forEach(System
+        .out::println);
   }
 }
