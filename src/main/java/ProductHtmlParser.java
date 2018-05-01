@@ -2,7 +2,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.html.HtmlTableDataCell;
-import java.util.List;
+import java.util.Optional;
 
 class ProductHtmlParser {
 
@@ -10,14 +10,22 @@ class ProductHtmlParser {
     private  final String XPATH_FOR_NUTRITIONAL_VALUE = "//table[contains(@class, 'nutritionTable')]/tbody/tr[contains(@class, 'tableRow1')]/td[contains(@class, 'tableRow1')]";
 
 
-    Product buildProduct(HtmlDivision htmlProduct) {
-        return new Product(getProductName(htmlProduct), getkCalPer100g(htmlProduct), 0.0, "");
+    Optional<Product> buildProduct(HtmlDivision htmlProduct) {
+        return htmlProduct != null
+            ? Optional.of(new Product(
+                getProductName(htmlProduct),
+                getkCalPer100g(htmlProduct), 0.0, ""))
+            : Optional.empty();
     }
 
     private String getkCalPer100g(HtmlDivision htmlProduct) {
         HtmlPage productPage;
         try {
-            productPage = ((HtmlAnchor) htmlProduct.getByXPath(XPATH_OF_PRODUCT_ANCHOR).get(0)).click();
+            HtmlAnchor productAnchor = htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR);
+            if (productAnchor == null) {
+                return null;
+            }
+            productPage = productAnchor.click();
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -27,12 +35,10 @@ class ProductHtmlParser {
     }
 
     private String getProductName(HtmlDivision htmlProduct) {
-        List<?> htmlAnchorList = htmlProduct.getByXPath(XPATH_OF_PRODUCT_ANCHOR);
-        if (htmlAnchorList.isEmpty()) {
+        HtmlAnchor htmlAnchor = htmlProduct.getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR);
+        if (htmlAnchor == null) {
             return null;
         }
-
-        HtmlAnchor htmlAnchor = (HtmlAnchor) htmlAnchorList.get(0);
 
         if (htmlAnchor.getTextContent() == null) {
             return null;

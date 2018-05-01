@@ -103,7 +103,7 @@ class SainsburysScrapeServiceImplTest {
     HtmlDivision htmlDivision = mock(HtmlDivision.class);
     Product product = new Product("hehe", "1337kJ", 13.37, "l33t product");
     doReturn(Collections.singletonList(htmlDivision)).when(htmlPage).getByXPath(anyString());
-    when(productHtmlParser.buildProduct(htmlDivision)).thenReturn(product);
+    when(productHtmlParser.buildProduct(htmlDivision)).thenReturn(Optional.of(product));
 
 //    when
     List<Product> productList = sainsburysScrapeService

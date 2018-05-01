@@ -29,9 +29,11 @@ public class SainsburysScrapeServiceImpl implements  SainsburysScrapeService {
         ArrayList<Product> productList = new ArrayList<>();
 
         for (HtmlDivision htmlProduct : htmlProductList) {
-             Product product = productHtmlParser.buildProduct(htmlProduct);
-             productList.add(product);
-            System.out.println(product);
+             Optional<Product> productOpt = productHtmlParser.buildProduct(htmlProduct);
+             if (productOpt.isPresent()) {
+                 productList.add(productOpt.get());
+                 System.out.println(productOpt.get());
+             }
         }
         return productList;
     }
