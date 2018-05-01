@@ -33,8 +33,8 @@ public class Product {
     public String toString() {
         return "Product{" +
             "title='" + title + '\'' +
-            ", kCalPer100g=" + kCalPer100g +
-            ", unitPrice=" + unitPrice +
+            ", kCalPer100g='" + kCalPer100g + '\'' +
+            ", unitPrice='" + unitPrice + '\'' +
             ", description='" + description + '\'' +
             '}';
     }
