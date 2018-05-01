@@ -26,6 +26,6 @@ public class SainsburysScraper {
         .buildProductsFromProductPage(htmlPage, XPATH_EXPR_FOR_PRODUCTS);
 
     Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().serializeNulls().create();
-    System.out.println(gson.toJson(productList));
+    System.out.println(gson.toJson(new JSONOutput(productList)));
   }
 }
