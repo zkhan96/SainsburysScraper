@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="003f4217-d91f-49f2-865d-8d7d0328b13f" name="Default" comment="added more null checks and stubbed test file for html parser">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="003f4217-d91f-49f2-865d-8d7d0328b13f" name="Default" comment="``">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_7_0.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_7_0.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_7_0.xml" afterPath="" />
@@ -20,6 +19,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ProductHtmlParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/ProductHtmlParserTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -102,16 +103,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductHtmlParserTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductHtmlParserTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ProductHtmlParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="432">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#279#280#0" expanded="true" />
                 <element signature="e#338#339#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -544,7 +555,6 @@
         <option value="$PROJECT_DIR$/src/SainsburysScraper.java" />
         <option value="$PROJECT_DIR$/main/java/SainsburysScraper.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
         <option value="$PROJECT_DIR$/test/java/SainsburysScraperTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SainsburysScraperTest.java" />
@@ -559,6 +569,7 @@
         <option value="$PROJECT_DIR$/src/test/java/SainsburysScrapeServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProductHtmlParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/ProductHtmlParserTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -979,7 +990,7 @@
       <workItem from="1525077561760" duration="277000" />
       <workItem from="1525077860686" duration="976000" />
       <workItem from="1525129247123" duration="18657000" />
-      <workItem from="1525199969263" duration="7319000" />
+      <workItem from="1525199969263" duration="7485000" />
     </task>
     <task id="LOCAL-00001" summary="integrated with gradle to simplify build process">
       <created>1525037204480</created>
@@ -1030,7 +1041,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525207083605</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=".gitignore should work now">
+      <created>1525207304768</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1525207304768</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1066,7 +1084,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35304000" />
+    <option name="totallyTimeSpent" value="35470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -1125,7 +1143,8 @@
     <MESSAGE value="using XPath to get required element" />
     <MESSAGE value="refactored services and partially building product POJOs from HTML" />
     <MESSAGE value="added more null checks and stubbed test file for html parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more null checks and stubbed test file for html parser" />
+    <MESSAGE value=".gitignore should work now" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore should work now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1221,7 +1240,6 @@
     <entry file="file://$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
     <entry file="file://$PROJECT_DIR$/build/scripts/SainsburysScraper" />
     <entry file="file://$PROJECT_DIR$/SainsburysScraper.iml" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1384,13 +1402,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ProductHtmlParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#279#280#0" expanded="true" />
             <element signature="e#338#339#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
