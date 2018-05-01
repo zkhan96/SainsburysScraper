@@ -20,7 +20,7 @@ class ProductHtmlParserTest {
     @Test
     void givenHtmlProduct_whenParsingProduct_thenReturnProduct() {
 
-        System.out.println("test");
+        System.out.println("test2");
     }
 
 }
