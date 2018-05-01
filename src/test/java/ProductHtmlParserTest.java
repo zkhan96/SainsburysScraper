@@ -15,6 +15,8 @@ class ProductHtmlParserTest {
     private ProductHtmlParser productHtmlParser;
     private final String XPATH_OF_PRODUCT_ANCHOR = "div[contains(@class, 'productInfo')]/div[contains(@class, 'productNameAndPromotions')]/h3/a";
     private final String XPATH_OF_PRODUCT_TITLE = "//div[contains(@class, 'productTitleDescriptionContainer')]/h1";
+    private final String XPATH_FOR_NUTRITIONAL_VALUE = "//table[contains(@class, 'nutritionTable')]/tbody/tr[contains(@class, 'tableRow1')]/td[contains(@class, 'tableRow1')]";
+    private final String XPATH_FOR_PRODUCT_PRICE ="//p[contains(@class, 'pricePerUnit')]";
 
 
     @BeforeEach
@@ -51,6 +53,41 @@ class ProductHtmlParserTest {
 
 //        then
         assertEquals("htmlAnchorText", productHtmlParser.buildProduct(htmlProduct).get().getTitle());
+    }
+
+
+    @Test
+    void givenHtmlProductWithCalories_whenParsingProduct_thenReturnProductWithFormattedCalories() throws Exception {
+//        given
+        HtmlDivision htmlProduct = mock(HtmlDivision.class);
+        HtmlAnchor htmlAnchor = mock(HtmlAnchor.class);
+        HtmlPage page = mock(HtmlPage.class);
+        HtmlElement htmlElement = mock(HtmlElement.class);
+
+        doReturn(htmlAnchor).when(htmlProduct).getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR);
+        when(htmlAnchor.click()).thenReturn(page);
+        doReturn(htmlElement).when(page).getFirstByXPath(XPATH_FOR_NUTRITIONAL_VALUE);
+        when(htmlElement.getTextContent()).thenReturn("120kJ");
+
+//        then
+        assertEquals(120, productHtmlParser.buildProduct(htmlProduct).get().getkCalPer100g());
+    }
+
+    @Test
+    void givenHtmlProductWithPrice_whenParsingProduct_thenReturnProductWithFormattedPrice() throws Exception {
+//        given
+        HtmlDivision htmlProduct = mock(HtmlDivision.class);
+        HtmlAnchor htmlAnchor = mock(HtmlAnchor.class);
+        HtmlPage page = mock(HtmlPage.class);
+        HtmlElement htmlElement = mock(HtmlElement.class);
+
+        doReturn(htmlAnchor).when(htmlProduct).getFirstByXPath(XPATH_OF_PRODUCT_ANCHOR);
+        when(htmlAnchor.click()).thenReturn(page);
+        doReturn(htmlElement).when(page).getFirstByXPath(XPATH_FOR_PRODUCT_PRICE);
+        when(htmlElement.getTextContent()).thenReturn("£1.20");
+
+//        then
+        assertEquals(1.20, productHtmlParser.buildProduct(htmlProduct).get().getUnitPrice());
     }
 
 }
