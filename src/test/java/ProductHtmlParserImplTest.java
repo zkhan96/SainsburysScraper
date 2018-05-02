@@ -11,7 +11,7 @@ import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class ProductHtmlParserTest {
+class ProductHtmlParserImplTest {
     private ProductHtmlParser productHtmlParser;
     private final String XPATH_OF_PRODUCT_ANCHOR = "div[contains(@class, 'productInfo')]/div[contains(@class, 'productNameAndPromotions')]/h3/a";
     private final String XPATH_OF_PRODUCT_TITLE = "//div[contains(@class, 'productTitleDescriptionContainer')]/h1";
@@ -21,7 +21,7 @@ class ProductHtmlParserTest {
 
     @BeforeEach
     void setUp() {
-        productHtmlParser = new ProductHtmlParser();
+        productHtmlParser = new ProductHtmlParserImpl();
     }
 
     @Test

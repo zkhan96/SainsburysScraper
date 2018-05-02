@@ -21,7 +21,7 @@ class SainsburysScrapeServiceImplTest {
 
   @BeforeEach
   void setUp() {
-    ProductHtmlParser productHtmlParser = new ProductHtmlParser();
+    ProductHtmlParser productHtmlParser = new ProductHtmlParserImpl();
     sainsburysScrapeService = new SainsburysScrapeServiceImpl(productHtmlParser);
   }
 
@@ -97,7 +97,7 @@ class SainsburysScrapeServiceImplTest {
   @Test
   void givenValidXPath_andValidHtmlPage_whenBuildingProductsFromProductPage_thenReturnProductList() {
 //    given
-    ProductHtmlParser productHtmlParser = mock(ProductHtmlParser.class);
+    ProductHtmlParser productHtmlParser = mock(ProductHtmlParserImpl.class);
     sainsburysScrapeService = new SainsburysScrapeServiceImpl(productHtmlParser);
     HtmlPage htmlPage = mock(HtmlPage.class);
     HtmlDivision htmlDivision = mock(HtmlDivision.class);

@@ -13,7 +13,7 @@ public class SainsburysScraper {
 
   public static void main(String[] args) {
 
-    ProductHtmlParser productHtmlParser = new ProductHtmlParser();
+    ProductHtmlParser productHtmlParser = new ProductHtmlParserImpl();
     SainsburysScrapeService sainsburysScrapeService = new SainsburysScrapeServiceImpl(productHtmlParser);
 
     Optional<HtmlPage> page = sainsburysScrapeService.getPageForUrl(SAINSBURYS_URL);
