@@ -1,6 +1,8 @@
 # Sainsburys Scraper
 
-Hello there :)
+# Usage instructions
+Hello there :) This is my attempt at creating an extensible web scraper for the Sainsbury's 
+groceries website.
 
 To build the project, run: 
 

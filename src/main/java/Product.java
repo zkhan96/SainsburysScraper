@@ -24,10 +24,6 @@ public class Product {
         return unit_price;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     @Override
     public String toString() {
         return "Product{" +
