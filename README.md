@@ -4,6 +4,9 @@
 Hello there :) This is my attempt at creating an extensible web scraper for the Sainsbury's 
 groceries website.
 
+![dev vs client](https://media1.tenor.com/images/c8069eb379fdb4b2f2bc8779869ce959/tenor
+.gif?itemid=8105335)
+
 To build the project, run: 
 
 `./gradlew build`
