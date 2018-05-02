@@ -13,7 +13,7 @@ public class SainsburysScrapeServiceImpl implements  SainsburysScrapeService {
     private static final Logger LOGGER = Logger.getGlobal();
     private ProductHtmlParser productHtmlParser;
 
-    public SainsburysScrapeServiceImpl(ProductHtmlParser productHtmlParser) {
+    SainsburysScrapeServiceImpl(ProductHtmlParser productHtmlParser) {
         this.productHtmlParser = productHtmlParser;
     }
 
