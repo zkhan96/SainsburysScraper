@@ -1,11 +1,11 @@
 import java.util.List;
 
-class JSONOutput {
+class ListOfProducts {
 
     private List<Product> results;
     private double total;
 
-    JSONOutput(List<Product> productList) {
+    ListOfProducts(List<Product> productList) {
         this.results = productList;
         this.total = productList.stream().mapToDouble(Product::getUnitPrice).sum();
     }

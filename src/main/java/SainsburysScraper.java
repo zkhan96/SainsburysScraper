@@ -1,4 +1,5 @@
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.util.List;
@@ -26,7 +27,7 @@ public class SainsburysScraper {
     List<Product> productList = sainsburysScrapeService
         .buildProductsFromProductPage(page.get(), XPATH_EXPR_FOR_PRODUCTS);
 
-    Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
-    System.out.println(gson.toJson(new JSONOutput(productList)));
+    Gson gson = new GsonBuilder().disableHtmlEscaping().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).setPrettyPrinting().create();
+    System.out.println(gson.toJson(new ListOfProducts(productList)));
   }
 }
